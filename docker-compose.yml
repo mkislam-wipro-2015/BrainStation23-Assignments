@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    ports:
+      - "5001:5000"
+    environment:
+      - VERSION=1.0.0
+      - FLASK_ENV=development 
+    volumes:
+      - .:/app  
+    user: "appuser"  
+    command: ["python", "app.py"]  
+
