@@ -1,2 +1,10 @@
-venv/
-nano
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.log
+*.exe
+crash.log
+terraform.tfstate
+terraform.tfstate.backup
+
